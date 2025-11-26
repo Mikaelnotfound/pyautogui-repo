@@ -1,7 +1,7 @@
 import pyautogui
 import time
 
-# stop mouse 
+# stop mouse if is moving
 pyautogui.FAILSAFE = True
 
 # open browser
@@ -10,7 +10,6 @@ pyautogui.write("Chrome", interval=0.1)
 pyautogui.press("enter")
 
 # search web
-
 pyautogui.moveTo(800,600, duration=1)
 pyautogui.click()
 pyautogui.write("wikipedia.org", interval=0.1)
